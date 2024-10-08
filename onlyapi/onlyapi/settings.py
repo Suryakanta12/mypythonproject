@@ -30,7 +30,10 @@ SECRET_KEY = 'django-insecure-n=svrjlo%%i+@wbe%o&ebb&r$^9+xof)^k8fj$io_n(sy!c#aw
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+# AUTH_USER_MODEL = "authentication.User"
+AUTHENTICATION_BACKENDS = [
+    "django.contrib.auth.backends.ModelBackend",
+]
 
 # Application definition
 
