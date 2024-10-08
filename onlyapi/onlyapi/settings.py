@@ -90,7 +90,8 @@ WSGI_APPLICATION = 'onlyapi.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        # 'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'mysql.connector.django',
         'NAME': 'ecopresence_db',
         'USER': 'ecopresence_dba',
         'PASSWORD': 'vDJul8xR~9t0mjpn',
